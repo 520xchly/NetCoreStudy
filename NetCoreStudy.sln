@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "临时", "临时", "{177C27BC-11DB-4F90-AC0F-7FAFD7AE17B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1CD78071-599F-45A7-9BD1-4DB2EFC6CE9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore31", "src\AspNetCore31\AspNetCore31.csproj", "{3C84E233-6C7E-4191-8805-502844D36D54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C84E233-6C7E-4191-8805-502844D36D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C84E233-6C7E-4191-8805-502844D36D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C84E233-6C7E-4191-8805-502844D36D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C84E233-6C7E-4191-8805-502844D36D54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C84E233-6C7E-4191-8805-502844D36D54} = {1CD78071-599F-45A7-9BD1-4DB2EFC6CE9D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A3FF808-B690-4712-B163-5E8A0C5C55F0}
+	EndGlobalSection
+EndGlobal
