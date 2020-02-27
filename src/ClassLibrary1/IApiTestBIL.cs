@@ -6,5 +6,6 @@ namespace IBIL
 {
     public interface IApiTestBIL
     {
+        void Show();
     }
 }

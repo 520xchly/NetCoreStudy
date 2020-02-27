@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBIL", "src\ClassLibrary1\IBIL.csproj", "{BBBFF706-0F71-4393-B74C-E25D56D60185}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIL", "src\ClassLibrary2\BIL.csproj", "{740830C5-6A20-47E4-824C-781510CC66DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBBFF706-0F71-4393-B74C-E25D56D60185} = {BBBFF706-0F71-4393-B74C-E25D56D60185}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDAL", "src\ClassLibrary3\IDAL.csproj", "{C3E08C25-BE02-48B7-91AB-10CE773A1466}"
 EndProject

@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
+using BIL;
+using IBIL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +29,14 @@ namespace WebApi31Test
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //services.AddScoped<IApiTestBIL, ApiTestBIL>();
+        }
+
+        //autofacµÄDI
+        public void ConfigureContainer(ContainerBuilder containerBuilder)
+        {
+            containerBuilder.RegisterType<ApiTestBIL>().As<IApiTestBIL>().InstancePerLifetimeScope();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
