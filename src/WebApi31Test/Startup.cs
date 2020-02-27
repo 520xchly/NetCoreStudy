@@ -9,10 +9,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using WebApi31Test.MyFactory;
 
 namespace WebApi31Test
 {
@@ -30,7 +32,12 @@ namespace WebApi31Test
         {
             services.AddControllers();
 
-            //services.AddScoped<IApiTestBIL, ApiTestBIL>();
+            //自定义IOC
+            //services.AddScoped<IControllerFactory, MyControllerFactory>();
+            //services.AddScoped<IControllerActivator, CloudControllerActivator>();
+
+
+            services.AddScoped<IApiTestBIL, ApiTestBIL>();
         }
 
         //autofac的DI

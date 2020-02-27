@@ -15,6 +15,12 @@ namespace WebApi31Test.Controllers
     {
         public IApiTestBIL _apiTestBIL;
         public ILogger<ApiTestController> _logger;
+
+        public ApiTestController()
+        {
+
+        }
+
         public ApiTestController(IApiTestBIL apiTestBIL, ILogger<ApiTestController> logger) //
         {
             _apiTestBIL = apiTestBIL;
